@@ -152,7 +152,7 @@ import { UserProgress } from '../../models/question.model';
     }
   `]
 })
-export class HomeComponent implements OnInit {
+export class Home implements OnInit {
   private api = inject(ApiService);
   progress: UserProgress | null = null;
 

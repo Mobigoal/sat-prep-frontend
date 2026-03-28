@@ -72,7 +72,7 @@ import { Question } from '../../models/question.model';
         <button 
           *ngFor="let q of questions; let i = index"
           class="dot"
-          [class answered]="answers[q.id] !== undefined"
+          [class.answered]="answers[q.id] !== undefined"
           [class.current]="i === currentIndex"
           (click)="goToQuestion(i)"
         >
@@ -218,7 +218,7 @@ import { Question } from '../../models/question.model';
     .dot.current { border-color: #2563eb; }
   `]
 })
-export class QuizComponent implements OnInit {
+export class Quiz implements OnInit {
   private api = inject(ApiService);
   private router = inject(Router);
   

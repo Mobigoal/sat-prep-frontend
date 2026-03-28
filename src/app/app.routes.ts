@@ -1,11 +1,11 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './components/home/home.component';
-import { PracticeComponent } from './components/practice/practice.component';
-import { QuizComponent } from './components/quiz/quiz.component';
+import { Home } from './components/home/home.component';
+import { Practice } from './components/practice/practice.component';
+import { Quiz } from './components/quiz/quiz.component';
 
 export const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'practice', component: PracticeComponent },
-  { path: 'quiz', component: QuizComponent },
+  { path: '', component: Home },
+  { path: 'practice', component: Practice },
+  { path: 'quiz', component: Quiz },
   { path: '**', redirectTo: '' }
 ];

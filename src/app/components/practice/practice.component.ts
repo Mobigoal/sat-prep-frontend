@@ -213,7 +213,7 @@ import { Question } from '../../models/question.model';
     .btn-secondary:hover { background: #e5e7eb; }
   `]
 })
-export class PracticeComponent implements OnInit {
+export class Practice implements OnInit {
   private api = inject(ApiService);
   private route = inject(ActivatedRoute);
   
